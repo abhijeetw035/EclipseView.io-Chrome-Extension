@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.head{
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+
+}
+
+.descrip{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body{
+    width: 250px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 10px;
+    align-items: center;
+    /* border: 1px solid black; */
+    /* border-radius: 10px; */
+}
+
+.button{
+    font-family: 'Arial', sans-serif;   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 1.7rem;
+    width: 3.5rem;
+    background-color: #FDFCA3;
+    border-radius: 20px;
+    position: relative;
+    /* animation: transformToBlue 1s linear 0s infinite; */
+    cursor: pointer;
+}
+
+.description{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.text,.github{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+.row{
+    padding: 3px;
+    pointer-events: none;
+}
+
+.circle{
+    top: 0;
+    left: 0;
+    width: 1.7rem;
+    height: 1.7rem;
+    border-radius: 50%;
+    background-color: rgb(255, 213, 0);
+    position: absolute;
+    /* animation: moveCircleRight 1s linear 0s infinite; */
+    pointer-events: none;
+}
+
+/* animations */
+
+@keyframes moveCircleRight {
+    0% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+    
+    100% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+}
+
+@keyframes moveCircleLeft {
+    0% {
+        left: 100%;
+        transform: translateX(-100%);
+        background-color: #588BE4;
+    }
+    
+    100% {
+        left: 0;
+        transform: translateX(0);
+        background-color: rgb(255, 213, 0);
+    }
+}
+
+@keyframes transformToBlue {
+    0% {
+        background-color: #FDFCA3;
+    }
+
+    100% {
+        background-color: #8ABFF0;
+    }
+}
+
+@keyframes transformToYellow {
+    0% {
+        background-color: #8ABFF0;
+    }
+
+    100% {
+        background-color: #FDFCA3;
+    }
+}

@@ -1,0 +1,23 @@
+
+{
+    "name": "EclipseView.io",
+    "description": "Go to DarkMode from LightMode and ViceVersa",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "background": {
+        "scripts": ["popup.js"],
+        "persistent": true
+    },
+    "browser_action": {
+        "default_icon": "src/darkThme.png",
+        "default_title": "EclipseView.io",
+        "default_popup": "popup.html"
+    },
+    "permissions": [
+        "activeTab",
+        "storage",
+        "https://*/*",
+        "http://*/*",
+        "tabs"
+    ]
+}
